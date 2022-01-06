@@ -1,0 +1,6 @@
+export const INCREMENT = 'increment'
+export const DECREMENT = 'decrement'
+export const INPUT_TEXT = 'input_text'
+export const COMMENT_CREAT = 'comment_creat'
+export const COMMENT_UPDATE = 'comment_update'
+export const COMMENT_DELETE = 'comments_delete'
