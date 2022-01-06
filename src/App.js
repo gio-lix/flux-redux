@@ -10,7 +10,6 @@ function App() {
     return (
         <>
             <div className='w-full h-auto flex justify-center mt-20'>
-
                 <div className='w-4/6 h-auto flex border border-black   p-1'>
                     <div className='w-4/6 h-auto flex flex-col border border-black'>
                         <div className='relative w-full h-86 bg-green-200'>
@@ -22,7 +21,7 @@ function App() {
                         </div>
                     </div>
                     <Spin />
-                    {error && <p className='fixed top-0 left-0 w-full h-screen flex justify-center mt-5 text-red-500 '>{error}</p> }
+                    {error && <p className='fixed top-0 left-0 w-full h-20 flex justify-center mt-5 text-red-500 '>{error}</p> }
                     <Comments />
                 </div>
             </div>
