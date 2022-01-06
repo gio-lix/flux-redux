@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {commentsDelete, commentsUpdate} from "../redux/action";
+import {commentsDelete, commentsLoad, commentsUpdate} from "../redux/action";
 
 const SingleComments = ({text, id}) => {
     const [commentsText, setCommentsText] = useState('');
@@ -14,10 +14,14 @@ const SingleComments = ({text, id}) => {
         e.preventDefault()
         dispatch(commentsUpdate(commentsText, id))
     }
+
     const handleDelete = (e) => {
         e.preventDefault()
         dispatch(commentsDelete(id))
     }
+
+
+
 
     return (
         <div className='border border-black flex items-center w-72 '>
